@@ -1,0 +1,2 @@
+rootProject.name='Revise'
+include ':app'

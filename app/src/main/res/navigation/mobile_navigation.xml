@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        class="com.albertjokelin.revise.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action app:destination="@id/nav_science" />
+        <action app:destination="@id/nav_maths"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_science"
+        class="com.albertjokelin.revise.ui.science.ScienceFragment"
+        android:label="@string/science"
+        tools:layout="@layout/fragment_science">
+        <action app:popUpTo="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_maths"
+        class="com.albertjokelin.revise.ui.maths.MathsFragment"
+        android:label="@string/maths"
+        tools:layout="@layout/fragment_maths" >
+        <action app:popUpTo="@id/nav_home" />
+    </fragment>
+</navigation>

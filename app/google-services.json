@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1037420747940",
+    "firebase_url": "https://revise-12e7c.firebaseio.com",
+    "project_id": "revise-12e7c",
+    "storage_bucket": "revise-12e7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037420747940:android:2d1145a63f42370c941a31",
+        "android_client_info": {
+          "package_name": "com.albertjokelin.revise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037420747940-f47j798j90ng7mit3m5m9gpdspp7j87c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-TVVgXbjAvM_oTnEKDerV-jWIwy5EIbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037420747940-f47j798j90ng7mit3m5m9gpdspp7j87c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
