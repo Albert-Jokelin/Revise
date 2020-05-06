@@ -13,7 +13,9 @@ import com.albertjokelin.revise.databinding.ActivityMainBinding
 import com.albertjokelin.revise.ui.home.HomeFragment
 import com.albertjokelin.revise.ui.maths.MathsFragment
 import com.albertjokelin.revise.ui.science.ScienceFragment
+import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.app_bar_main.view.*
 
@@ -32,10 +34,10 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         // Google Ad-mobs Code
 
-      /*  MobileAds.initialize(this)
+        MobileAds.initialize(this)
        mAdView = findViewById(R.id.adView)
        val adRequest: AdRequest = AdRequest.Builder().build()
-       mAdView.loadAd(adRequest)*/
+       mAdView.loadAd(adRequest)
 
 
         // Change the title bar name to Home and stuff
@@ -57,15 +59,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         navigationView.setNavigationItemSelectedListener(this)
     }
 
-
-  /*  override fun onBackPressed() {
-        val drawer = binding.drawerLayout //findViewById(R.id.drawer_layout) as DrawerLayout
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
-    }*/
+    
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
